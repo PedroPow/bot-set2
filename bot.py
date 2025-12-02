@@ -4,12 +4,13 @@ from discord.ext import commands
 from discord.ui import View, Button, Select, Modal, TextInput
 from discord import Embed, TextStyle
 import asyncio
+import os
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # CONFIGURAÇÃO
-TOKEN = "MTM2MjIwODU1NjUwNTM2NjczMA.GGsvo2.t99f9NiAJ4pMKRV6UYbuR3K_20YK8zKu8huy_Q"
+TOKEN = os.getenv("TOKEN")
 CANALETA_SOLICITAR_SET_ID = 1373877635041464432
 CARGO_NOVATO_ID = 1363298591614963772
 CATEGORIA_TICKET_ID = 1373846163366875146  # <- Substitua pelo ID correto da categoria dos tickets
