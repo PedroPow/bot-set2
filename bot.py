@@ -5,6 +5,9 @@ from discord.ui import View, Button, Select, Modal, TextInput
 from discord import Embed, TextStyle
 import asyncio
 import os
+import sys
+sys.modules['audioop'] = None
+
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
