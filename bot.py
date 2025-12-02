@@ -460,6 +460,3 @@ async def on_member_join(member):
             print(f"Permissão negada ao tentar dar cargo de novato a {member.name}")
         except discord.HTTPException as e:
             print(f"Erro ao atribuir cargo de novato: {e}")
-
-
-bot.run(TOKEN)
